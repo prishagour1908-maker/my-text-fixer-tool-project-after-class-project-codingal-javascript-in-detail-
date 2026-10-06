@@ -1,0 +1,1 @@
+# my-text-fixer-tool-project-after-class-project-codingal-javascript-in-detail-
