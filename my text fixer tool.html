@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division Calculator</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: cursive;
+            background-color: beige;
+            color: #f7fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .container {
+            background: linear-gradient(to right, #b275e4, #f881f0);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            }
+        .subtitle {
+            color: #fafcff;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        .output-box {
+            background: #020617;
+            border-radius: 8px;
+            padding: 1.25rem;
+            font-size: 1.15rem;
+            border-left: 4px solid #6366f1;
+            margin-bottom: 1.5rem;
+            text-align: left;
+          
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Math Engine</h1>
+    <p class="subtitle">This Will Divide Your Number By 100!</p>
+    
+    <div class="output-box">
+        <script>
+            try {
+            var n = Number(prompt('enter a number:'));
+            if (isNaN(n))
+            {
+            throw "Please enter a valid number!";
+            }
+            document.write(100 / n);
+            }
+            catch(err) {
+            document.write("Error: " + err);
+            }
+        </script>
+    </div>
+
+</div>
+
+</body>
+</html>
